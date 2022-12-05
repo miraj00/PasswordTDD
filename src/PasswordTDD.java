@@ -14,13 +14,18 @@
 		import java.util.Scanner;
 
 		public class PasswordTDD {
+			
+			
 			public static Scanner sc = new Scanner(System.in);
+			
+			
 			public static ArrayList<String> passwordList = new ArrayList<String>(
 					Arrays.asList("admin", "BUGGY55", "RAYLEIGH77", "SCOpper88", "CROCUS99", "R0gER3","HellOO11@"));
 
 			public static void main(String[] args) {
+				System.out.print("Please Enter a password : ");				
 				String word = sc.nextLine();
-			
+
 				System.out.println(passwordValidate(word, passwordList));
 
 			}
